@@ -1,17 +1,58 @@
-# NEVER commit these to GitHub - they contain private keys!
+# Secrets & credentials
 .streamlit/secrets.toml
+secrets.toml
 *.json
-service_account.json
-axiomatic-idiom-496012-p8-f42364b00442.json
+service_account*.json
+credentials*.json
 
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+.Python
 *.egg-info/
-.env
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
 venv/
 .venv/
+env/
+.env/
+ENV/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
