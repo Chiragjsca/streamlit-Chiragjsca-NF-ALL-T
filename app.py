@@ -17,7 +17,7 @@ import google.generativeai as genai
 # ==========================================
 # ⚙️ PAGE CONFIGURATION
 # ==========================================
-st.set_page_config(page_title="NF-Top 250 NSE Stock-Turnover Breakout Dashboard", layout="wide", page_icon="📊")
+st.set_page_config(page_title="NF-All NSE Stock-Turnover Breakout Dashboard", layout="wide", page_icon="📊")
 
 # ==========================================
 # 🤖 CONFIGURE AI (GEMINI + GROQ)
@@ -156,7 +156,7 @@ if "ai_history" not in st.session_state:
 
 if not st.session_state.logged_in:
     # Top hint
-    st.markdown("<p style='text-align: center; margin-top: 100px; color: Green; font-size: 18px;'> NF-250-T Dashboard</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; margin-top: 100px; color: Green; font-size: 18px;'> NF-All-T Dashboard</p>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center; margin-top: 0px; font-size: 20px;'>🔐 Admin Login</h1>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 1, 1])
@@ -207,7 +207,7 @@ import yfinance as yf
 import streamlit as st
 from datetime import datetime
 
-st.markdown("<p style='font-size:0.85rem; font-weight:bold; margin:0; padding:0;'>📊 NF-Top 250 NSE Stock-Turnover Breakout Dashboard</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:0.85rem; font-weight:bold; margin:0; padding:0;'>📊 NF-All NSE Stock-Turnover Breakout Dashboard</p>", unsafe_allow_html=True)
 st.caption(f"Data refreshed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 @st.cache_data(ttl=60)
